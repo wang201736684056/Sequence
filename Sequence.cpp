@@ -1,6 +1,15 @@
-#include"Sequence.h"
-char woc[15000000];
-char* woc[15000000];
+
+char strc[1500001];
+
+char* substr[1500001];
+
+int cmpl(const void* p,const void* q)
+
+{
+
+	return strcmp(*(char **)p, *(char **)q);
+
+}
 Sequence::Sequence(const string& filename)
 {
 	char fuc;
@@ -42,22 +51,9 @@ string Sequence::longestConsecutive()
 	{
 	if (a>0)
 	{
-	if (fuc[a]==fuc[a-1]) 
+	if (total[a]==total[a-1]) 
 	{
-	sd++;
-	if (sd>end)
-	{
-	start=st;
-	end=sd;
-	}
-	}
-	else sd=1;st=a;}
-	}
-	a++;
-	}
-	return total.substr(start,end);
+	sd++;}
 }
-string Sequence::longestRepeated()
-{
-	
+}
 }
