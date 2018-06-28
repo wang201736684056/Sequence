@@ -42,7 +42,7 @@ string Sequence::longestConsecutive()
 	{
 	if (a>0)
 	{
-	if (val[a]==val[a-1]) 
+	if (fuc[a]==fuc[a-1]) 
 	{
 	sd++;
 	if (sd>end)
